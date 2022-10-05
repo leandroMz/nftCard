@@ -1,0 +1,141 @@
+@import '/css/animation.css';
+@import 'desktop.css';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main : hsl(217, 54%, 11%);
+    --Very-dark-blue-card : hsl(216, 50%, 16%);
+    --Very-darkblue : hsl(215, 32%, 27%);
+    --White : hsl(0, 0%, 100%);
+}
+
+/* Font size (paragraph): 18px */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: left;
+    font-family: 'Outfit', sans-serif;
+    
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  gap: 0.5em;
+  background-color: var(--Very-dark-blue-main);
+}
+ 
+h2{    
+    color: var(--White);
+    padding: 1rem 0rem 1rem;
+}
+p, h4{
+    font-size: 18px;
+    color: var(--Softblue);
+    font-weight: 300;
+}
+ul{
+    list-style: none;
+}
+.name{
+    color: var(--White);
+}
+h3{
+    color: var(--Cyan);
+}
+.card-contain{
+    padding: 2rem;
+    background-color: var(--Very-dark-blue-card);
+}
+
+.card-ext{    
+    padding: 1.5rem 1.5rem 1rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+    background-color: var(--Very-darkblue); 
+    box-shadow: 0px 4px 8px var(--Very-dark-blue-main);
+}
+
+.nft{     
+    width: 100%;   
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 8px var(--Very-dark-blue-main);
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+}
+
+.price-time{
+    padding: 1rem 0rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction:row;
+    justify-content: space-between;
+}
+li{
+    display: flex;
+    align-items: center;
+    flex-direction:row;    
+}
+
+.li-price{
+ padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.hr-horizontal-gradient {
+    margin: 1px 0;
+	padding: 0.2px 50%;
+	height: 1.5px;
+	border: none;    
+	background: linear-gradient(60deg, var(--Very-darkblue),var(--Cyan),rgb(43, 134, 134), rgb(27, 105, 105), rgb(29, 105, 105) ,rgb(47, 146, 146),rgb(29, 105, 105), rgb(21, 100, 100), rgb(18, 75, 75), var(--Very-darkblue));
+}
+.creator{
+    border-radius: 50%;    
+    height: 60px;
+    width: 60px;
+    border-image: var(--White);
+    margin: 0rem 0.5rem 0rem 0rem;
+}
+
+.card-foot{
+    padding: 0.5rem 0rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction:row; 
+    justify-content: space-between; 
+}
+.creator-display{ 
+    /* position: relative; */
+    left: -35px;   
+    padding: 1rem 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+} 
+h5{
+    color: var(--Softblue);
+    font-size: 16px;
+    padding: 0rem 0.2rem;
+    font-weight: 300;
+}
+

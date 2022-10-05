@@ -1,0 +1,51 @@
+.animation-image {
+    opacity: 100%;
+    border: 20px solid var(--Cyan);
+    border-image: linear-gradient(45deg, var(--Cyan), var(--Very-darkblue)) 1;
+    clip-path: inset(5px round 15px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+    
+}
+
+@keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+
+
+
+
+
+@keyframes size {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transition-delay: 2s;
+        transform: scale(2, 2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.creator:hover {
+    animation-name: size;
+    animation-duration: 3s;
+}
+
+.name:hover {
+    color: var(--Cyan);
+}
+
+.text-active:hover {
+    color: var(--Cyan);
+}
